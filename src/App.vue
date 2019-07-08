@@ -1,29 +1,80 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png" />
-    <h1>{{ msg }}</h1>-->
     <l-map
       :zoom="zoom"
       :center="center"
+      :options="mapOptions"
       @update:zoom="zoomUpdated"
       @update:center="centerUpdated"
       @update:bounds="boundsUpdated"
     >
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
       <l-marker :lat-lng="marker"></l-marker>
+      <l-choropleth-layer
+        :data="pyDepartmentsData"
+        titleKey="department_name"
+        idKey="department_id"
+        :value="value"
+        :extraValues="extraValues"
+        geojsonIdKey="dpto"
+        :geojson="paraguayGeojson"
+        :colorScale="colorScale"
+      >
+        <template slot-scope="props">
+          <l-info-control
+            :item="props.currentItem"
+            :unit="props.unit"
+            title="Department"
+            placeholder="Hover over a department"
+          />
+          <l-reference-chart
+            title="Girls school enrolment"
+            :colorScale="colorScale"
+            :min="props.min"
+            :max="props.max"
+            position="topright"
+          />
+        </template>
+      </l-choropleth-layer>
     </l-map>
   </div>
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker, LControlZoom } from "vue2-leaflet";
-
+import { InfoControl, ReferenceChart, ChoroplethLayer } from "vue-choropleth";
+import { geojson } from "./data/py-departments-data";
+import paraguayGeojson from "./data/paraguay.json";
+import { pyDepartmentsData } from "./data/py-departments-data";
+import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 export default {
   name: "app",
-  components: { LMap, LTileLayer, LMarker, LControlZoom },
+  components: {
+    LMap,
+    LTileLayer,
+    LMarker,
+    "l-info-control": InfoControl,
+    "l-reference-chart": ReferenceChart,
+    "l-choropleth-layer": ChoroplethLayer
+  },
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      pyDepartmentsData,
+      paraguayGeojson,
+      colorScale: ["e7d090", "e9ae7b", "de7062"],
+      value: {
+        key: "amount_w",
+        metric: "% girls"
+      },
+      extraValues: [
+        {
+          key: "amount_m",
+          metric: "% boys"
+        }
+      ],
+      mapOptions: {
+        attributionControl: false
+      },
+      currentStrokeColor: "3d3213",
       zoomControl: false,
       attributionControl: false,
       minZoom: 2,
@@ -51,12 +102,6 @@ export default {
     }
   }
 };
-
-// create a red polygon from an array of LatLng points
-var latlngs = [[37, -109.05], [41, -109.03], [41, -102.05], [37, -102.04]];
-var polygon = L.polygon(latlngs, { color: "red" }).addTo(LMap);
-// zoom the map to the polygon
-LMap.fitBounds(polygon.getBounds());
 </script>
 
 <style lang="scss">
