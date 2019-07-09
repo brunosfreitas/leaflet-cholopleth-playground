@@ -130,6 +130,7 @@ export default {
        ** Props for l-reference-chart
        */
       l_reference_chart_props: {
+        // Good acessibility map colours http://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=5
         colorScale: ["d7191c", "fdae61", "ffffbf", "a6d96a", "1a9641"],
         position: "topright"
       }
