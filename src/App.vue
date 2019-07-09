@@ -6,6 +6,7 @@
       @update:center="centerUpdated"
       @update:bounds="boundsUpdated"
     >
+      <!-- TODO zoomout overlay not resizing -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker v-for="a_marker in l_marker_props" :key="a_marker" :lat-lng="a_marker"></l-marker>
       <l-marker :lat-lng="marker2"></l-marker>
@@ -14,6 +15,7 @@
         titleKey="department_name"
         idKey="id"
         geojsonIdKey="id"
+        :zoom="l_map_props.zoom"
       >
         <template slot-scope="props">
           <l-info-control
