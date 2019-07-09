@@ -69,7 +69,7 @@ export default {
         zoom: 5,
 
         // Jump to the world where the layers exists.
-        // TODO Solve a way to only render the map area, without copies
+        // TODO Solve a way to only render the map area, without copies - mapBounds
         worldCopyJump: true,
 
         options: {
@@ -78,6 +78,7 @@ export default {
           maxZoom: 7
         },
         // Where the map starts
+
         center: L.latLng(47.41322, -1.219482)
       },
 
