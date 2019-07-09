@@ -7,6 +7,7 @@
       @update:bounds="boundsUpdated"
     >
       <!-- TODO zoomout overlay not resizing -->
+      <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker v-for="a_marker in l_marker_props" :key="a_marker" :lat-lng="a_marker"></l-marker>
       <l-marker :lat-lng="marker2"></l-marker>
@@ -72,7 +73,7 @@ export default {
         worldCopyJump: true,
 
         options: {
-          attributionControl: false,
+          // attributionControl: false,
           minZoom: 3,
           maxZoom: 7
         },
