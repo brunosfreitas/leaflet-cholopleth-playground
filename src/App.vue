@@ -1,24 +1,18 @@
 <template>
   <div id="app">
     <l-map
-      :zoom="zoom"
-      :center="center"
-      :options="mapOptions"
+      v-bind="l_map_props"
       @update:zoom="zoomUpdated"
       @update:center="centerUpdated"
       @update:bounds="boundsUpdated"
     >
-      <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+      <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker :lat-lng="marker"></l-marker>
       <l-choropleth-layer
-        :data="pyDepartmentsData"
+        v-bind="l_choropleth_layer_props"
         titleKey="department_name"
-        idKey="department_id"
-        :value="value"
-        :extraValues="extraValues"
-        geojsonIdKey="dpto"
-        :geojson="paraguayGeojson"
-        :colorScale="colorScale"
+        idKey="id"
+        geojsonIdKey="id"
       >
         <template slot-scope="props">
           <l-info-control
@@ -29,10 +23,9 @@
           />
           <l-reference-chart
             title="Girls school enrolment"
-            :colorScale="colorScale"
+            v-bind="l_reference_chart_props"
             :min="props.min"
             :max="props.max"
-            position="topright"
           />
         </template>
       </l-choropleth-layer>
@@ -41,10 +34,16 @@
 </template>
 
 <script>
+// As in: https://leafletjs.com/examples/choropleth/
+// and: https://github.com/voluntadpear/vue-choropleth
 import { InfoControl, ReferenceChart, ChoroplethLayer } from "vue-choropleth";
-import { geojson } from "./data/py-departments-data";
-import paraguayGeojson from "./data/paraguay.json";
-import { pyDepartmentsData } from "./data/py-departments-data";
+// import { geojson } from "./data/py-departments-data";
+
+// Data get at: https://github.com/johan/world.geo.json/blob/master/countries.geo.json?short_path=afdfc39
+// If you need to import map data from a external server: https://korigan.github.io/Vue2Leaflet/#/components/l-geo-json/
+import countriesGeojson from "./data/countries.json";
+// import { pyDepartmentsData } from "./data/py-departments-data";
+import { countriesData } from "./data/countries-data";
 import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 export default {
   name: "app",
@@ -58,47 +57,92 @@ export default {
   },
   data() {
     return {
-      pyDepartmentsData,
-      paraguayGeojson,
-      colorScale: ["e7d090", "e9ae7b", "de7062"],
-      value: {
-        key: "amount_w",
-        metric: "% girls"
-      },
-      extraValues: [
-        {
-          key: "amount_m",
-          metric: "% boys"
-        }
-      ],
-      mapOptions: {
-        attributionControl: false
-      },
-      currentStrokeColor: "3d3213",
-      zoomControl: false,
-      attributionControl: false,
-      minZoom: 2,
-      maxZoom: 7,
-      zoom: 5, // From 0-18
+      // pyDepartmentsData,
+      countriesData,
 
-      center: L.latLng(47.41322, -1.219482),
-      url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
-      attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      marker: L.latLng(47.41322, -1.219482)
+      currentStrokeColor: "3d3213",
+
+      /*
+       ** Props for LMap
+       */
+      l_map_props: {
+        // Initial zoom -- From 0-18
+        zoom: 5,
+
+        // Jump to the world where the layers exists.
+        // TODO Solve a way to only render the map area, without copies
+        worldCopyJump: true,
+
+        options: {
+          attributionControl: false,
+          minZoom: 3,
+          maxZoom: 7
+        },
+        // Where the map starts
+        center: L.latLng(47.41322, -1.219482)
+      },
+
+      // A marker
+      marker: L.latLng(47.41322, -1.219482),
+
+      /*
+       ** Props for l-choropleth-layer
+       */
+      l_choropleth_layer_props: {
+        // The polygonal paths for countries
+        geojson: countriesGeojson,
+        data: countriesData,
+
+        // Remove the white stroke of unselected countries
+        strokeWidth: 0,
+        // Selected/Mouseover country option
+        currentStrokeWidth: 2,
+        currentStrokeColor: "ffdd00",
+        value: {
+          key: "amount_w",
+          metric: "% girls"
+        },
+        extraValues: [
+          {
+            key: "amount_m",
+            metric: "% boys"
+          }
+        ]
+      },
+
+      /*
+       ** Props for LTileLayer
+       */
+      l_tile_layer_props: {
+        // -- Colored map with sea borders, local language based names --
+        // url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+
+        // -- Grayscale map, english
+        url:
+          "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+        attribution:
+          '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution" alt="Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL">Carto</a>'
+      },
+
+      /*
+       ** Props for l-reference-chart
+       */
+      l_reference_chart_props: {
+        colorScale: ["d7191c", "fdae61", "ffffbf", "a6d96a", "1a9641"],
+        position: "topright"
+      }
     };
   },
   methods: {
     zoomUpdated(zoom) {
-      if (zoom < this.minZoom || zoom > this.maxZoom) return;
-      this.zoom = zoom;
+      this.l_map_props.zoom = zoom;
       console.info("Zoom to: ", zoom);
     },
     centerUpdated(center) {
-      this.center = center;
+      this.l_map_props.center = center;
     },
     boundsUpdated(bounds) {
-      this.bounds = bounds;
+      this.l_map_props.bounds = bounds;
     }
   }
 };
