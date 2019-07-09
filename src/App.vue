@@ -7,7 +7,8 @@
       @update:bounds="boundsUpdated"
     >
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
-      <l-marker :lat-lng="marker"></l-marker>
+      <l-marker v-for="a_marker in l_marker_props" :key="a_marker" :lat-lng="a_marker"></l-marker>
+      <l-marker :lat-lng="marker2"></l-marker>
       <l-choropleth-layer
         v-bind="l_choropleth_layer_props"
         titleKey="department_name"
@@ -57,11 +58,6 @@ export default {
   },
   data() {
     return {
-      // pyDepartmentsData,
-      countriesData,
-
-      currentStrokeColor: "3d3213",
-
       /*
        ** Props for LMap
        */
@@ -83,7 +79,10 @@ export default {
       },
 
       // A marker
-      marker: L.latLng(47.41322, -1.219482),
+      l_marker_props: {
+        marker: L.latLng(47.41322, -1.219482),
+        marker2: L.latLng(50.41322, -3.219482)
+      },
 
       /*
        ** Props for l-choropleth-layer
