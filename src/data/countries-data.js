@@ -1,14 +1,15 @@
 export var countriesData = [
+
     {
-        id: "BRA",
-        department_name: "Asunción",
-        amount_w: 91.11,
-        amount_m: 89.5
-    },
-    {
-        id: "BOL",
-        department_name: "Alto Paraguay",
+        id: 23,
+        name: "Bolivia",
         amount_w: 91.1,
         amount_m: 93.88
+    },
+    {
+        id: 24,
+        name: "Brazil",
+        amount_w: 91.11,
+        amount_m: 89.5
     }
 ]

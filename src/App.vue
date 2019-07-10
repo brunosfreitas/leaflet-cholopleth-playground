@@ -10,18 +10,13 @@
       <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker v-for="a_marker in l_marker_props" :key="a_marker.ley" :lat-lng="a_marker.value"></l-marker>
-      <l-choropleth-layer
-        v-bind="l_choropleth_layer_props"
-        titleKey="department_name"
-        idKey="id"
-        geojsonIdKey="id"
-        :zoom="l_map_props.zoom"
-      >
+
+      <l-choropleth-layer v-bind="l_choropleth_layer_props" :zoom="l_map_props.zoom">
         <template slot-scope="props">
           <l-info-control
             :item="props.currentItem"
             :unit="props.unit"
-            title="Department"
+            title="Country info"
             placeholder="Hover over a department"
           />
           <l-reference-chart
@@ -99,8 +94,15 @@ export default {
       l_choropleth_layer_props: {
         // The polygonal paths for countries
         geojson: countriesGeojson,
-        // The data for each country
+        // data: Data object with the information to show on the map
         data: countriesData,
+
+        //titleKey: Property of the data object to show when you hover over a certain region of your map (e.g. state_name)
+        titleKey: "name",
+        //geojsonIdKey: Property under the properties array of the GeoJSON that serves as identifier of each region of the map.
+        geojsonIdKey: "id",
+        //idKey: Property of the data object that matches the geojsonIdKey value.
+        idKey: "id",
 
         // Remove the white stroke of unselected countries
         strokeWidth: 0,

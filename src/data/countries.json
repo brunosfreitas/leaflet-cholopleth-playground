@@ -5,6 +5,7 @@
             "type": "Feature",
             "id": "AFG",
             "properties": {
+                "id": 1,
                 "name": "Afghanistan"
             },
             "geometry": {
@@ -295,6 +296,7 @@
             "type": "Feature",
             "id": "AGO",
             "properties": {
+                "id": 2,
                 "name": "Angola"
             },
             "geometry": {
@@ -615,6 +617,7 @@
             "type": "Feature",
             "id": "ALB",
             "properties": {
+                "id": 3,
                 "name": "Albania"
             },
             "geometry": {
@@ -717,6 +720,7 @@
             "type": "Feature",
             "id": "ARE",
             "properties": {
+                "id": 4,
                 "name": "United Arab Emirates"
             },
             "geometry": {
@@ -819,6 +823,7 @@
             "type": "Feature",
             "id": "ARG",
             "properties": {
+                "id": 5,
                 "name": "Argentina"
             },
             "geometry": {
@@ -1323,6 +1328,7 @@
             "type": "Feature",
             "id": "ARM",
             "properties": {
+                "id": 6,
                 "name": "Armenia"
             },
             "geometry": {
@@ -1417,6 +1423,7 @@
             "type": "Feature",
             "id": "ATA",
             "properties": {
+                "id": 7,
                 "name": "Antarctica"
             },
             "geometry": {
@@ -4085,6 +4092,7 @@
             "type": "Feature",
             "id": "ATF",
             "properties": {
+                "id": 8,
                 "name": "French Southern and Antarctic Lands"
             },
             "geometry": {
@@ -4135,6 +4143,7 @@
             "type": "Feature",
             "id": "AUS",
             "properties": {
+                "id": 9,
                 "name": "Australia"
             },
             "geometry": {
@@ -5119,6 +5128,7 @@
             "type": "Feature",
             "id": "AUT",
             "properties": {
+                "id": 10,
                 "name": "Austria"
             },
             "geometry": {
@@ -5281,6 +5291,7 @@
             "type": "Feature",
             "id": "AZE",
             "properties": {
+                "id": 11,
                 "name": "Azerbaijan"
             },
             "geometry": {
@@ -5477,6 +5488,7 @@
             "type": "Feature",
             "id": "BDI",
             "properties": {
+                "id": 12,
                 "name": "Burundi"
             },
             "geometry": {
@@ -5543,6 +5555,7 @@
             "type": "Feature",
             "id": "BEL",
             "properties": {
+                "id": 13,
                 "name": "Belgium"
             },
             "geometry": {
@@ -5617,6 +5630,7 @@
             "type": "Feature",
             "id": "BEN",
             "properties": {
+                "id": 14,
                 "name": "Benin"
             },
             "geometry": {
@@ -5731,6 +5745,7 @@
             "type": "Feature",
             "id": "BFA",
             "properties": {
+                "id": 15,
                 "name": "Burkina Faso"
             },
             "geometry": {
@@ -5901,6 +5916,7 @@
             "type": "Feature",
             "id": "BGD",
             "properties": {
+                "id": 16,
                 "name": "Bangladesh"
             },
             "geometry": {
@@ -6059,6 +6075,7 @@
             "type": "Feature",
             "id": "BGR",
             "properties": {
+                "id": 17,
                 "name": "Bulgaria"
             },
             "geometry": {
@@ -6185,6 +6202,7 @@
             "type": "Feature",
             "id": "BHS",
             "properties": {
+                "id": 18,
                 "name": "The Bahamas"
             },
             "geometry": {
@@ -6293,6 +6311,7 @@
             "type": "Feature",
             "id": "BIH",
             "properties": {
+                "id": 19,
                 "name": "Bosnia and Herzegovina"
             },
             "geometry": {
@@ -6395,6 +6414,7 @@
             "type": "Feature",
             "id": "BLR",
             "properties": {
+                "id": 20,
                 "name": "Belarus"
             },
             "geometry": {
@@ -6585,6 +6605,7 @@
             "type": "Feature",
             "id": "BLZ",
             "properties": {
+                "id": 21,
                 "name": "Belize"
             },
             "geometry": {
@@ -6679,6 +6700,7 @@
             "type": "Feature",
             "id": "BMU",
             "properties": {
+                "id": 22,
                 "name": "Bermuda"
             },
             "geometry": {
@@ -7037,6 +7059,7 @@
             "type": "Feature",
             "id": "BOL",
             "properties": {
+                "id": 23,
                 "name": "Bolivia"
             },
             "geometry": {
@@ -7291,6 +7314,7 @@
             "type": "Feature",
             "id": "BRA",
             "properties": {
+                "id": 24,
                 "name": "Brazil"
             },
             "geometry": {
@@ -8117,6 +8141,7 @@
             "type": "Feature",
             "id": "BRN",
             "properties": {
+                "id": 25,
                 "name": "Brunei"
             },
             "geometry": {
@@ -8163,6 +8188,7 @@
             "type": "Feature",
             "id": "BTN",
             "properties": {
+                "id": 26,
                 "name": "Bhutan"
             },
             "geometry": {
@@ -8229,6 +8255,7 @@
             "type": "Feature",
             "id": "BWA",
             "properties": {
+                "id": 27,
                 "name": "Botswana"
             },
             "geometry": {
@@ -8403,6 +8430,7 @@
             "type": "Feature",
             "id": "CAF",
             "properties": {
+                "id": 28,
                 "name": "Central African Republic"
             },
             "geometry": {
@@ -8665,6 +8693,7 @@
             "type": "Feature",
             "id": "CAN",
             "properties": {
+                "id": 29,
                 "name": "Canada"
             },
             "geometry": {
@@ -11965,6 +11994,7 @@
             "type": "Feature",
             "id": "CHE",
             "properties": {
+                "id": 30,
                 "name": "Switzerland"
             },
             "geometry": {
@@ -12075,6 +12105,7 @@
             "type": "Feature",
             "id": "CHL",
             "properties": {
+                "id": 31,
                 "name": "Chile"
             },
             "geometry": {
@@ -12551,6 +12582,7 @@
             "type": "Feature",
             "id": "CHN",
             "properties": {
+                "id": 32,
                 "name": "China"
             },
             "geometry": {
@@ -13531,6 +13563,7 @@
             "type": "Feature",
             "id": "CIV",
             "properties": {
+                "id": 33,
                 "name": "Ivory Coast"
             },
             "geometry": {
@@ -13729,6 +13762,7 @@
             "type": "Feature",
             "id": "CMR",
             "properties": {
+                "id": 34,
                 "name": "Cameroon"
             },
             "geometry": {
@@ -13987,6 +14021,7 @@
             "type": "Feature",
             "id": "COD",
             "properties": {
+                "id": 35,
                 "name": "Democratic Republic of the Congo"
             },
             "geometry": {
@@ -14489,6 +14524,7 @@
             "type": "Feature",
             "id": "COG",
             "properties": {
+                "id": 36,
                 "name": "Republic of the Congo"
             },
             "geometry": {
@@ -14699,6 +14735,7 @@
             "type": "Feature",
             "id": "COL",
             "properties": {
+                "id": 37,
                 "name": "Colombia"
             },
             "geometry": {
@@ -15113,6 +15150,7 @@
             "type": "Feature",
             "id": "CRI",
             "properties": {
+                "id": 38,
                 "name": "Costa Rica"
             },
             "geometry": {
@@ -15271,6 +15309,7 @@
             "type": "Feature",
             "id": "CUB",
             "properties": {
+                "id": 39,
                 "name": "Cuba"
             },
             "geometry": {
@@ -15453,6 +15492,7 @@
             "type": "Feature",
             "id": "-99",
             "properties": {
+                "id": 40,
                 "name": "Northern Cyprus"
             },
             "geometry": {
@@ -15531,6 +15571,7 @@
             "type": "Feature",
             "id": "CYP",
             "properties": {
+                "id": 41,
                 "name": "Cyprus"
             },
             "geometry": {
@@ -15605,6 +15646,7 @@
             "type": "Feature",
             "id": "CZE",
             "properties": {
+                "id": 42,
                 "name": "Czech Republic"
             },
             "geometry": {
@@ -15759,6 +15801,7 @@
             "type": "Feature",
             "id": "DEU",
             "properties": {
+                "id": 43,
                 "name": "Germany"
             },
             "geometry": {
@@ -16005,6 +16048,7 @@
             "type": "Feature",
             "id": "DJI",
             "properties": {
+                "id": 44,
                 "name": "Djibouti"
             },
             "geometry": {
@@ -16079,6 +16123,7 @@
             "type": "Feature",
             "id": "DNK",
             "properties": {
+                "id": 45,
                 "name": "Denmark"
             },
             "geometry": {
@@ -16195,6 +16240,7 @@
             "type": "Feature",
             "id": "DOM",
             "properties": {
+                "id": 46,
                 "name": "Dominican Republic"
             },
             "geometry": {
@@ -16313,6 +16359,7 @@
             "type": "Feature",
             "id": "DZA",
             "properties": {
+                "id": 47,
                 "name": "Algeria"
             },
             "geometry": {
@@ -16575,6 +16622,7 @@
             "type": "Feature",
             "id": "ECU",
             "properties": {
+                "id": 48,
                 "name": "Ecuador"
             },
             "geometry": {
@@ -16721,6 +16769,7 @@
             "type": "Feature",
             "id": "EGY",
             "properties": {
+                "id": 49,
                 "name": "Egypt"
             },
             "geometry": {
@@ -16903,6 +16952,7 @@
             "type": "Feature",
             "id": "ERI",
             "properties": {
+                "id": 50,
                 "name": "Eritrea"
             },
             "geometry": {
@@ -17029,6 +17079,7 @@
             "type": "Feature",
             "id": "ESP",
             "properties": {
+                "id": 51,
                 "name": "Spain"
             },
             "geometry": {
@@ -17247,6 +17298,7 @@
             "type": "Feature",
             "id": "EST",
             "properties": {
+                "id": 52,
                 "name": "Estonia"
             },
             "geometry": {
@@ -17329,6 +17381,7 @@
             "type": "Feature",
             "id": "ETH",
             "properties": {
+                "id": 53,
                 "name": "Ethiopia"
             },
             "geometry": {
@@ -17579,6 +17632,7 @@
             "type": "Feature",
             "id": "FIN",
             "properties": {
+                "id": 54,
                 "name": "Finland"
             },
             "geometry": {
@@ -17745,6 +17799,7 @@
             "type": "Feature",
             "id": "FJI",
             "properties": {
+                "id": 55,
                 "name": "Fiji"
             },
             "geometry": {
@@ -17857,6 +17912,7 @@
             "type": "Feature",
             "id": "FLK",
             "properties": {
+                "id": 56,
                 "name": "Falkland Islands"
             },
             "geometry": {
@@ -17911,6 +17967,7 @@
             "type": "Feature",
             "id": "FRA",
             "properties": {
+                "id": 57,
                 "name": "France"
             },
             "geometry": {
@@ -18151,6 +18208,7 @@
             "type": "Feature",
             "id": "GAB",
             "properties": {
+                "id": 58,
                 "name": "Gabon"
             },
             "geometry": {
@@ -18289,6 +18347,7 @@
             "type": "Feature",
             "id": "GBR",
             "properties": {
+                "id": 59,
                 "name": "United Kingdom"
             },
             "geometry": {
@@ -18533,6 +18592,7 @@
             "type": "Feature",
             "id": "GEO",
             "properties": {
+                "id": 60,
                 "name": "Georgia"
             },
             "geometry": {
@@ -18643,6 +18703,7 @@
             "type": "Feature",
             "id": "GHA",
             "properties": {
+                "id": 61,
                 "name": "Ghana"
             },
             "geometry": {
@@ -18757,6 +18818,7 @@
             "type": "Feature",
             "id": "GIN",
             "properties": {
+                "id": 62,
                 "name": "Guinea"
             },
             "geometry": {
@@ -19051,6 +19113,7 @@
             "type": "Feature",
             "id": "GMB",
             "properties": {
+                "id": 63,
                 "name": "Gambia"
             },
             "geometry": {
@@ -19129,6 +19192,7 @@
             "type": "Feature",
             "id": "GNB",
             "properties": {
+                "id": 64,
                 "name": "Guinea Bissau"
             },
             "geometry": {
@@ -19219,6 +19283,7 @@
             "type": "Feature",
             "id": "GNQ",
             "properties": {
+                "id": 65,
                 "name": "Equatorial Guinea"
             },
             "geometry": {
@@ -19261,6 +19326,7 @@
             "type": "Feature",
             "id": "GRC",
             "properties": {
+                "id": 66,
                 "name": "Greece"
             },
             "geometry": {
@@ -19497,6 +19563,7 @@
             "type": "Feature",
             "id": "GRL",
             "properties": {
+                "id": 67,
                 "name": "Greenland"
             },
             "geometry": {
@@ -20039,6 +20106,7 @@
             "type": "Feature",
             "id": "GTM",
             "properties": {
+                "id": 68,
                 "name": "Guatemala"
             },
             "geometry": {
@@ -20193,6 +20261,7 @@
             "type": "Feature",
             "id": "GUF",
             "properties": {
+                "id": 69,
                 "name": "French Guiana"
             },
             "geometry": {
@@ -20283,6 +20352,7 @@
             "type": "Feature",
             "id": "GUY",
             "properties": {
+                "id": 70,
                 "name": "Guyana"
             },
             "geometry": {
@@ -20457,6 +20527,7 @@
             "type": "Feature",
             "id": "HND",
             "properties": {
+                "id": 71,
                 "name": "Honduras"
             },
             "geometry": {
@@ -20699,6 +20770,7 @@
             "type": "Feature",
             "id": "HRV",
             "properties": {
+                "id": 72,
                 "name": "Croatia"
             },
             "geometry": {
@@ -20881,6 +20953,7 @@
             "type": "Feature",
             "id": "HTI",
             "properties": {
+                "id": 73,
                 "name": "Haiti"
             },
             "geometry": {
@@ -20979,6 +21052,7 @@
             "type": "Feature",
             "id": "HUN",
             "properties": {
+                "id": 74,
                 "name": "Hungary"
             },
             "geometry": {
@@ -21117,6 +21191,7 @@
             "type": "Feature",
             "id": "IDN",
             "properties": {
+                "id": 75,
                 "name": "Indonesia"
             },
             "geometry": {
@@ -22181,6 +22256,7 @@
             "type": "Feature",
             "id": "IND",
             "properties": {
+                "id": 76,
                 "name": "India"
             },
             "geometry": {
@@ -22739,6 +22815,7 @@
             "type": "Feature",
             "id": "IRL",
             "properties": {
+                "id": 77,
                 "name": "Ireland"
             },
             "geometry": {
@@ -22805,6 +22882,7 @@
             "type": "Feature",
             "id": "IRN",
             "properties": {
+                "id": 78,
                 "name": "Iran"
             },
             "geometry": {
@@ -23119,6 +23197,7 @@
             "type": "Feature",
             "id": "IRQ",
             "properties": {
+                "id": 79,
                 "name": "Iraq"
             },
             "geometry": {
@@ -23253,6 +23332,7 @@
             "type": "Feature",
             "id": "ISL",
             "properties": {
+                "id": 80,
                 "name": "Iceland"
             },
             "geometry": {
@@ -23347,6 +23427,7 @@
             "type": "Feature",
             "id": "ISR",
             "properties": {
+                "id": 81,
                 "name": "Israel"
             },
             "geometry": {
@@ -23453,6 +23534,7 @@
             "type": "Feature",
             "id": "ITA",
             "properties": {
+                "id": 82,
                 "name": "Italy"
             },
             "geometry": {
@@ -23825,6 +23907,7 @@
             "type": "Feature",
             "id": "JAM",
             "properties": {
+                "id": 83,
                 "name": "Jamaica"
             },
             "geometry": {
@@ -23883,6 +23966,7 @@
             "type": "Feature",
             "id": "JOR",
             "properties": {
+                "id": 84,
                 "name": "Jordan"
             },
             "geometry": {
@@ -23973,6 +24057,7 @@
             "type": "Feature",
             "id": "JPN",
             "properties": {
+                "id": 85,
                 "name": "Japan"
             },
             "geometry": {
@@ -24257,6 +24342,7 @@
             "type": "Feature",
             "id": "KAZ",
             "properties": {
+                "id": 86,
                 "name": "Kazakhstan"
             },
             "geometry": {
@@ -24719,6 +24805,7 @@
             "type": "Feature",
             "id": "KEN",
             "properties": {
+                "id": 87,
                 "name": "Kenya"
             },
             "geometry": {
@@ -24881,6 +24968,7 @@
             "type": "Feature",
             "id": "KGZ",
             "properties": {
+                "id": 88,
                 "name": "Kyrgyzstan"
             },
             "geometry": {
@@ -25035,6 +25123,7 @@
             "type": "Feature",
             "id": "KHM",
             "properties": {
+                "id": 89,
                 "name": "Cambodia"
             },
             "geometry": {
@@ -25117,6 +25206,7 @@
             "type": "Feature",
             "id": "KOR",
             "properties": {
+                "id": 90,
                 "name": "South Korea"
             },
             "geometry": {
@@ -25207,6 +25297,7 @@
             "type": "Feature",
             "id": "CS-KM",
             "properties": {
+                "id": 91,
                 "name": "Kosovo"
             },
             "geometry": {
@@ -25305,6 +25396,7 @@
             "type": "Feature",
             "id": "KWT",
             "properties": {
+                "id": 92,
                 "name": "Kuwait"
             },
             "geometry": {
@@ -25355,6 +25447,7 @@
             "type": "Feature",
             "id": "LAO",
             "properties": {
+                "id": 93,
                 "name": "Laos"
             },
             "geometry": {
@@ -25517,6 +25610,7 @@
             "type": "Feature",
             "id": "LBN",
             "properties": {
+                "id": 94,
                 "name": "Lebanon"
             },
             "geometry": {
@@ -25575,6 +25669,7 @@
             "type": "Feature",
             "id": "LBR",
             "properties": {
+                "id": 95,
                 "name": "Liberia"
             },
             "geometry": {
@@ -25697,6 +25792,7 @@
             "type": "Feature",
             "id": "LBY",
             "properties": {
+                "id": 96,
                 "name": "Libya"
             },
             "geometry": {
@@ -25935,6 +26031,7 @@
             "type": "Feature",
             "id": "LKA",
             "properties": {
+                "id": 97,
                 "name": "Sri Lanka"
             },
             "geometry": {
@@ -25989,6 +26086,7 @@
             "type": "Feature",
             "id": "LSO",
             "properties": {
+                "id": 98,
                 "name": "Lesotho"
             },
             "geometry": {
@@ -26051,6 +26149,7 @@
             "type": "Feature",
             "id": "LTU",
             "properties": {
+                "id": 99,
                 "name": "Lithuania"
             },
             "geometry": {
@@ -26141,6 +26240,7 @@
             "type": "Feature",
             "id": "LUX",
             "properties": {
+                "id": 100,
                 "name": "Luxembourg"
             },
             "geometry": {
@@ -26183,6 +26283,7 @@
             "type": "Feature",
             "id": "LVA",
             "properties": {
+                "id": 101,
                 "name": "Latvia"
             },
             "geometry": {
@@ -26285,6 +26386,7 @@
             "type": "Feature",
             "id": "MAR",
             "properties": {
+                "id": 102,
                 "name": "Morocco"
             },
             "geometry": {
@@ -26555,6 +26657,7 @@
             "type": "Feature",
             "id": "MDA",
             "properties": {
+                "id": 103,
                 "name": "Moldova"
             },
             "geometry": {
@@ -26677,6 +26780,7 @@
             "type": "Feature",
             "id": "MDG",
             "properties": {
+                "id": 104,
                 "name": "Madagascar"
             },
             "geometry": {
@@ -26887,6 +26991,7 @@
             "type": "Feature",
             "id": "MEX",
             "properties": {
+                "id": 105,
                 "name": "Mexico"
             },
             "geometry": {
@@ -27581,6 +27686,7 @@
             "type": "Feature",
             "id": "MKD",
             "properties": {
+                "id": 106,
                 "name": "Macedonia"
             },
             "geometry": {
@@ -27663,6 +27769,7 @@
             "type": "Feature",
             "id": "MLI",
             "properties": {
+                "id": 107,
                 "name": "Mali"
             },
             "geometry": {
@@ -27981,6 +28088,7 @@
             "type": "Feature",
             "id": "MLT",
             "properties": {
+                "id": 108,
                 "name": "Malta"
             },
             "geometry": {
@@ -28065,6 +28173,7 @@
             "type": "Feature",
             "id": "MMR",
             "properties": {
+                "id": 109,
                 "name": "Myanmar"
             },
             "geometry": {
@@ -28359,6 +28468,7 @@
             "type": "Feature",
             "id": "MNE",
             "properties": {
+                "id": 110,
                 "name": "Montenegro"
             },
             "geometry": {
@@ -28445,6 +28555,7 @@
             "type": "Feature",
             "id": "MNG",
             "properties": {
+                "id": 111,
                 "name": "Mongolia"
             },
             "geometry": {
@@ -28759,6 +28870,7 @@
             "type": "Feature",
             "id": "MOZ",
             "properties": {
+                "id": 112,
                 "name": "Mozambique"
             },
             "geometry": {
@@ -29081,6 +29193,7 @@
             "type": "Feature",
             "id": "MRT",
             "properties": {
+                "id": 113,
                 "name": "Mauritania"
             },
             "geometry": {
@@ -29251,6 +29364,7 @@
             "type": "Feature",
             "id": "MWI",
             "properties": {
+                "id": 114,
                 "name": "Malawi"
             },
             "geometry": {
@@ -29377,6 +29491,7 @@
             "type": "Feature",
             "id": "MYS",
             "properties": {
+                "id": 115,
                 "name": "Malaysia"
             },
             "geometry": {
@@ -29645,6 +29760,7 @@
             "type": "Feature",
             "id": "NAM",
             "properties": {
+                "id": 116,
                 "name": "Namibia"
             },
             "geometry": {
@@ -29835,6 +29951,7 @@
             "type": "Feature",
             "id": "NCL",
             "properties": {
+                "id": 117,
                 "name": "New Caledonia"
             },
             "geometry": {
@@ -29901,6 +30018,7 @@
             "type": "Feature",
             "id": "NER",
             "properties": {
+                "id": 118,
                 "name": "Niger"
             },
             "geometry": {
@@ -30147,6 +30265,7 @@
             "type": "Feature",
             "id": "NGA",
             "properties": {
+                "id": 119,
                 "name": "Nigeria"
             },
             "geometry": {
@@ -30393,6 +30512,7 @@
             "type": "Feature",
             "id": "NIC",
             "properties": {
+                "id": 120,
                 "name": "Nicaragua"
             },
             "geometry": {
@@ -30615,6 +30735,7 @@
             "type": "Feature",
             "id": "NLD",
             "properties": {
+                "id": 121,
                 "name": "Netherlands"
             },
             "geometry": {
@@ -30685,6 +30806,7 @@
             "type": "Feature",
             "id": "NOR",
             "properties": {
+                "id": 122,
                 "name": "Norway"
             },
             "geometry": {
@@ -31065,6 +31187,7 @@
             "type": "Feature",
             "id": "NPL",
             "properties": {
+                "id": 123,
                 "name": "Nepal"
             },
             "geometry": {
@@ -31171,6 +31294,7 @@
             "type": "Feature",
             "id": "NZL",
             "properties": {
+                "id": 124,
                 "name": "New Zealand"
             },
             "geometry": {
@@ -31455,6 +31579,7 @@
             "type": "Feature",
             "id": "OMN",
             "properties": {
+                "id": 125,
                 "name": "Oman"
             },
             "geometry": {
@@ -31663,6 +31788,7 @@
             "type": "Feature",
             "id": "PAK",
             "properties": {
+                "id": 126,
                 "name": "Pakistan"
             },
             "geometry": {
@@ -31941,6 +32067,7 @@
             "type": "Feature",
             "id": "PAN",
             "properties": {
+                "id": 127,
                 "name": "Panama"
             },
             "geometry": {
@@ -32163,6 +32290,7 @@
             "type": "Feature",
             "id": "PER",
             "properties": {
+                "id": 128,
                 "name": "Peru"
             },
             "geometry": {
@@ -32481,6 +32609,7 @@
             "type": "Feature",
             "id": "PHL",
             "properties": {
+                "id": 129,
                 "name": "Philippines"
             },
             "geometry": {
@@ -32961,6 +33090,7 @@
             "type": "Feature",
             "id": "PNG",
             "properties": {
+                "id": 130,
                 "name": "Papua New Guinea"
             },
             "geometry": {
@@ -33313,6 +33443,7 @@
             "type": "Feature",
             "id": "POL",
             "properties": {
+                "id": 131,
                 "name": "Poland"
             },
             "geometry": {
@@ -33507,6 +33638,7 @@
             "type": "Feature",
             "id": "PRI",
             "properties": {
+                "id": 132,
                 "name": "Puerto Rico"
             },
             "geometry": {
@@ -33557,6 +33689,7 @@
             "type": "Feature",
             "id": "PRK",
             "properties": {
+                "id": 133,
                 "name": "North Korea"
             },
             "geometry": {
@@ -33743,6 +33876,7 @@
             "type": "Feature",
             "id": "PRT",
             "properties": {
+                "id": 134,
                 "name": "Portugal"
             },
             "geometry": {
@@ -33889,6 +34023,7 @@
             "type": "Feature",
             "id": "PRY",
             "properties": {
+                "id": 135,
                 "name": "Paraguay"
             },
             "geometry": {
@@ -34035,6 +34170,7 @@
             "type": "Feature",
             "id": "QAT",
             "properties": {
+                "id": 136,
                 "name": "Qatar"
             },
             "geometry": {
@@ -34085,6 +34221,7 @@
             "type": "Feature",
             "id": "ROU",
             "properties": {
+                "id": 137,
                 "name": "Romania"
             },
             "geometry": {
@@ -34275,6 +34412,7 @@
             "type": "Feature",
             "id": "RUS",
             "properties": {
+                "id": 138,
                 "name": "Russia"
             },
             "geometry": {
@@ -36731,6 +36869,7 @@
             "type": "Feature",
             "id": "RWA",
             "properties": {
+                "id": 139,
                 "name": "Rwanda"
             },
             "geometry": {
@@ -36797,6 +36936,7 @@
             "type": "Feature",
             "id": "ESH",
             "properties": {
+                "id": 140,
                 "name": "Western Sahara"
             },
             "geometry": {
@@ -36923,6 +37063,7 @@
             "type": "Feature",
             "id": "SAU",
             "properties": {
+                "id": 141,
                 "name": "Saudi Arabia"
             },
             "geometry": {
@@ -37241,6 +37382,7 @@
             "type": "Feature",
             "id": "SDN",
             "properties": {
+                "id": 142,
                 "name": "Sudan"
             },
             "geometry": {
@@ -37571,6 +37713,7 @@
             "type": "Feature",
             "id": "SSD",
             "properties": {
+                "id": 143,
                 "name": "South Sudan"
             },
             "geometry": {
@@ -37837,6 +37980,7 @@
             "type": "Feature",
             "id": "SEN",
             "properties": {
+                "id": 144,
                 "name": "Senegal"
             },
             "geometry": {
@@ -38027,6 +38171,7 @@
             "type": "Feature",
             "id": "SLB",
             "properties": {
+                "id": 145,
                 "name": "Solomon Islands"
             },
             "geometry": {
@@ -38207,6 +38352,7 @@
             "type": "Feature",
             "id": "SLE",
             "properties": {
+                "id": 146,
                 "name": "Sierra Leone"
             },
             "geometry": {
@@ -38309,6 +38455,7 @@
             "type": "Feature",
             "id": "SLV",
             "properties": {
+                "id": 147,
                 "name": "El Salvador"
             },
             "geometry": {
@@ -38403,6 +38550,7 @@
             "type": "Feature",
             "id": "-99",
             "properties": {
+                "id": 148,
                 "name": "Somaliland"
             },
             "geometry": {
@@ -38513,6 +38661,7 @@
             "type": "Feature",
             "id": "SOM",
             "properties": {
+                "id": 149,
                 "name": "Somalia"
             },
             "geometry": {
@@ -38671,6 +38820,7 @@
             "type": "Feature",
             "id": "SRB",
             "properties": {
+                "id": 150,
                 "name": "Republic of Serbia"
             },
             "geometry": {
@@ -38869,6 +39019,7 @@
             "type": "Feature",
             "id": "SUR",
             "properties": {
+                "id": 151,
                 "name": "Suriname"
             },
             "geometry": {
@@ -38987,6 +39138,7 @@
             "type": "Feature",
             "id": "SVK",
             "properties": {
+                "id": 152,
                 "name": "Slovakia"
             },
             "geometry": {
@@ -39133,6 +39285,7 @@
             "type": "Feature",
             "id": "SVN",
             "properties": {
+                "id": 153,
                 "name": "Slovenia"
             },
             "geometry": {
@@ -39219,6 +39372,7 @@
             "type": "Feature",
             "id": "SWE",
             "properties": {
+                "id": 154,
                 "name": "Sweden"
             },
             "geometry": {
@@ -39535,6 +39689,7 @@
             "type": "Feature",
             "id": "SWZ",
             "properties": {
+                "id": 155,
                 "name": "Swaziland"
             },
             "geometry": {
@@ -39593,6 +39748,7 @@
             "type": "Feature",
             "id": "SYR",
             "properties": {
+                "id": 156,
                 "name": "Syria"
             },
             "geometry": {
@@ -39715,6 +39871,7 @@
             "type": "Feature",
             "id": "TCD",
             "properties": {
+                "id": 157,
                 "name": "Chad"
             },
             "geometry": {
@@ -39961,6 +40118,7 @@
             "type": "Feature",
             "id": "TGO",
             "properties": {
+                "id": 158,
                 "name": "Togo"
             },
             "geometry": {
@@ -40051,6 +40209,7 @@
             "type": "Feature",
             "id": "THA",
             "properties": {
+                "id": 159,
                 "name": "Thailand"
             },
             "geometry": {
@@ -40321,6 +40480,7 @@
             "type": "Feature",
             "id": "TJK",
             "properties": {
+                "id": 160,
                 "name": "Tajikistan"
             },
             "geometry": {
@@ -40499,6 +40659,7 @@
             "type": "Feature",
             "id": "TKM",
             "properties": {
+                "id": 161,
                 "name": "Turkmenistan"
             },
             "geometry": {
@@ -40729,6 +40890,7 @@
             "type": "Feature",
             "id": "TLS",
             "properties": {
+                "id": 162,
                 "name": "East Timor"
             },
             "geometry": {
@@ -40787,6 +40949,7 @@
             "type": "Feature",
             "id": "TTO",
             "properties": {
+                "id": 163,
                 "name": "Trinidad and Tobago"
             },
             "geometry": {
@@ -40833,6 +40996,7 @@
             "type": "Feature",
             "id": "TUN",
             "properties": {
+                "id": 164,
                 "name": "Tunisia"
             },
             "geometry": {
@@ -40971,6 +41135,7 @@
             "type": "Feature",
             "id": "TUR",
             "properties": {
+                "id": 165,
                 "name": "Turkey"
             },
             "geometry": {
@@ -41259,6 +41424,7 @@
             "type": "Feature",
             "id": "TWN",
             "properties": {
+                "id": 166,
                 "name": "Taiwan"
             },
             "geometry": {
@@ -41309,6 +41475,7 @@
             "type": "Feature",
             "id": "TZA",
             "properties": {
+                "id": 167,
                 "name": "United Republic of Tanzania"
             },
             "geometry": {
@@ -41519,6 +41686,7 @@
             "type": "Feature",
             "id": "UGA",
             "properties": {
+                "id": 168,
                 "name": "Uganda"
             },
             "geometry": {
@@ -41641,6 +41809,7 @@
             "type": "Feature",
             "id": "UKR",
             "properties": {
+                "id": 169,
                 "name": "Ukraine"
             },
             "geometry": {
@@ -42047,6 +42216,7 @@
             "type": "Feature",
             "id": "URY",
             "properties": {
+                "id": 170,
                 "name": "Uruguay"
             },
             "geometry": {
@@ -42145,6 +42315,7 @@
             "type": "Feature",
             "id": "USA",
             "properties": {
+                "id": 171,
                 "name": "United States of America"
             },
             "geometry": {
@@ -43969,6 +44140,7 @@
             "type": "Feature",
             "id": "UZB",
             "properties": {
+                "id": 172,
                 "name": "Uzbekistan"
             },
             "geometry": {
@@ -44199,6 +44371,7 @@
             "type": "Feature",
             "id": "VEN",
             "properties": {
+                "id": 173,
                 "name": "Venezuela"
             },
             "geometry": {
@@ -44581,6 +44754,7 @@
             "type": "Feature",
             "id": "VNM",
             "properties": {
+                "id": 174,
                 "name": "Vietnam"
             },
             "geometry": {
@@ -44771,6 +44945,7 @@
             "type": "Feature",
             "id": "VUT",
             "properties": {
+                "id": 175,
                 "name": "Vanuatu"
             },
             "geometry": {
@@ -44839,6 +45014,7 @@
             "type": "Feature",
             "id": "PSE",
             "properties": {
+                "id": 176,
                 "name": "West Bank"
             },
             "geometry": {
@@ -44889,6 +45065,7 @@
             "type": "Feature",
             "id": "YEM",
             "properties": {
+                "id": 177,
                 "name": "Yemen"
             },
             "geometry": {
@@ -45079,6 +45256,7 @@
             "type": "Feature",
             "id": "ZAF",
             "properties": {
+                "id": 178,
                 "name": "South Africa"
             },
             "geometry": {
@@ -45471,6 +45649,7 @@
             "type": "Feature",
             "id": "ZMB",
             "properties": {
+                "id": 179,
                 "name": "Zambia"
             },
             "geometry": {
@@ -45729,6 +45908,7 @@
             "type": "Feature",
             "id": "ZWE",
             "properties": {
+                "id": 180,
                 "name": "Zimbabwe"
             },
             "geometry": {
