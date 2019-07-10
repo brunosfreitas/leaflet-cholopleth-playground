@@ -9,7 +9,7 @@
       <!-- TODO zoomout overlay not resizing -->
       <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
-      <l-marker v-for="a_marker in l_marker_props" :key="a_marker" :lat-lng="a_marker"></l-marker>
+      <l-marker v-for="a_marker in l_marker_props" :key="a_marker.ley" :lat-lng="a_marker.value"></l-marker>
       <l-marker :lat-lng="marker2"></l-marker>
       <l-choropleth-layer
         v-bind="l_choropleth_layer_props"
@@ -77,15 +77,21 @@ export default {
           minZoom: 3,
           maxZoom: 7
         },
-        // Where the map starts
 
+        // Where the map starts - could be the user location
         center: L.latLng(47.41322, -1.219482)
       },
 
       // A marker
       l_marker_props: {
-        marker: L.latLng(47.41322, -1.219482),
-        marker2: L.latLng(50.41322, -3.219482)
+        marker: {
+          key: 0,
+          value: L.latLng(47.41322, -1.219482)
+        },
+        marker2: {
+          key: 1,
+          value: L.latLng(50.41322, -3.219482)
+        }
       },
 
       /*
@@ -94,6 +100,7 @@ export default {
       l_choropleth_layer_props: {
         // The polygonal paths for countries
         geojson: countriesGeojson,
+        // The data for each country
         data: countriesData,
 
         // Remove the white stroke of unselected countries
