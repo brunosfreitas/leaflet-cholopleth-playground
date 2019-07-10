@@ -104,12 +104,14 @@ export default {
         //idKey: Property of the data object that matches the geojsonIdKey value.
         idKey: "id",
 
+        colorScale: ["d7191c", "fdae61", "ffffbf", "a6d96a", "1a9641"],
+
         // Remove the white stroke of unselected countries
         strokeWidth: 0,
-        strokeColor: "ddff00",
+        // strokeColor: "ddff00",
         // Selected/Mouseover country option
         currentStrokeWidth: 2,
-        currentStrokeColor: "ffdd00",
+        currentStrokeColor: "aaaaaa",
         value: {
           key: "amount_w",
           metric: "% girls"
@@ -197,5 +199,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+path.leaflet-interactive:not(:hover) {
+  fill: transparent;
 }
 </style>
