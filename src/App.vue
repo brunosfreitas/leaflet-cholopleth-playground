@@ -106,6 +106,7 @@ export default {
 
         // Remove the white stroke of unselected countries
         strokeWidth: 0,
+        strokeColor: "ddff00",
         // Selected/Mouseover country option
         currentStrokeWidth: 2,
         currentStrokeColor: "ffdd00",
@@ -141,6 +142,8 @@ export default {
       l_reference_chart_props: {
         // Good acessibility map colours http://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=5
         colorScale: ["d7191c", "fdae61", "ffffbf", "a6d96a", "1a9641"],
+        min: "10",
+        max: "200",
         position: "topright"
       }
     };

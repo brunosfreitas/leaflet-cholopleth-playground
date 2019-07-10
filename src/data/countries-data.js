@@ -9,7 +9,7 @@ export var countriesData = [
     {
         id: 24,
         name: "Brazil",
-        amount_w: 91.11,
+        amount_w: 70,
         amount_m: 89.5
     }
 ]
