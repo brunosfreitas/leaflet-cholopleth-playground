@@ -10,7 +10,6 @@
       <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker v-for="a_marker in l_marker_props" :key="a_marker.ley" :lat-lng="a_marker.value"></l-marker>
-      <l-marker :lat-lng="marker2"></l-marker>
       <l-choropleth-layer
         v-bind="l_choropleth_layer_props"
         titleKey="department_name"
