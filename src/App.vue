@@ -9,7 +9,16 @@
       <!-- TODO zoomout overlay not resizing -->
       <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
-      <l-marker v-for="a_marker in l_marker_props" :key="a_marker.ley" :lat-lng="a_marker.value"></l-marker>
+      <l-marker
+        v-for="a_marker in l_marker_props"
+        :key="a_marker.ley"
+        :lat-lng="a_marker.value"
+        :name="a_marker.options.title"
+        :options="a_marker.options"
+      >
+        <l-icon v-bind="a_marker.icon"></l-icon>
+        <l-popup>{{ a_marker.options.title }}</l-popup>
+      </l-marker>
 
       <l-choropleth-layer v-bind="l_choropleth_layer_props" :zoom="l_map_props.zoom">
         <template slot-scope="props">
@@ -42,13 +51,15 @@ import { InfoControl, ReferenceChart, ChoroplethLayer } from "vue-choropleth";
 import countriesGeojson from "./data/countries.json";
 // import { pyDepartmentsData } from "./data/py-departments-data";
 import { countriesData } from "./data/countries-data";
-import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "vue2-leaflet";
 export default {
   name: "app",
   components: {
     LMap,
     LTileLayer,
     LMarker,
+    LPopup,
+    LIcon,
     "l-info-control": InfoControl,
     "l-reference-chart": ReferenceChart,
     "l-choropleth-layer": ChoroplethLayer
@@ -76,15 +87,44 @@ export default {
         center: L.latLng(47.41322, -1.219482)
       },
 
-      // A marker
+      // A list of markers
       l_marker_props: {
         marker: {
           key: 0,
-          value: L.latLng(47.41322, -1.219482)
+          // Paris
+          value: L.latLng(48.8566, 2.3522),
+          options: {
+            title: "I'm a point",
+            alt: "I'm a point",
+            riseOnHover: true
+          },
+          icon: {
+            iconSize: [32, 32],
+            // 0,0 is the first pixel of the image, so we want Middle X, bottom 32
+            iconAnchor: [16, 32],
+            // As its initial point is on the iconAnchor
+            popupAnchor: [0, -32],
+            className: "c-icon--paris",
+            iconUrl: "src/assets/hermes.png"
+          }
         },
         marker2: {
           key: 1,
-          value: L.latLng(50.41322, -3.219482)
+          // London
+          value: L.latLng(51.509865, -0.118092),
+          options: {
+            title: "And the other one",
+            opacity: 0.3
+          },
+          icon: {
+            iconSize: [32, 32],
+            // 0,0 is the first pixel of the image, so we want Middle X, bottom 32
+            iconAnchor: [16, 32],
+            // As its initial point is on the iconAnchor
+            popupAnchor: [0, -32],
+            className: "c-icon--london",
+            iconUrl: "src/assets/syringe.png"
+          }
         }
       },
 
@@ -203,5 +243,17 @@ a {
 
 path.leaflet-interactive:not(:hover) {
   fill: transparent;
+}
+
+path.leaflet-interactive {
+  stroke: currentColor;
+}
+
+.c-icon--paris {
+  border-bottom: 5px #a641d9 solid;
+}
+
+.c-icon--london {
+  border-bottom: 5px tomato solid;
 }
 </style>
