@@ -1,6 +1,9 @@
-# vue-cli-playground
+# leaflet-cholopleth-playground
 
 > A Vue.js project
+
+// As in: https://leafletjs.com/examples/choropleth/
+// and: https://github.com/voluntadpear/vue-choropleth
 
 ## Build Setup
 
