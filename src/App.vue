@@ -20,7 +20,7 @@
         <l-popup>{{ a_marker.options.title }}</l-popup>
       </l-marker>
 
-      <l-choropleth-layer v-bind="l_choropleth_layer_props" :zoom="l_map_props.zoom">
+      <l-choropleth-layer v-bind="l_choropleth_layer_props">
         <template slot-scope="props">
           <l-info-control
             :item="props.currentItem"
@@ -98,6 +98,7 @@ export default {
             alt: "I'm a point",
             riseOnHover: true
           },
+          // More details - https://www.youtube.com/watch?v=JOg5GDy2Ih4&list=PLDmvslp_VR0xjh7wGMNd_1kk0zUox6Sue&index=2
           icon: {
             iconSize: [32, 32],
             // 0,0 is the first pixel of the image, so we want Middle X, bottom 32
@@ -249,11 +250,30 @@ path.leaflet-interactive {
   stroke: currentColor;
 }
 
-.c-icon--paris {
-  border-bottom: 5px #a641d9 solid;
+.leaflet-popup-content-wrapper {
+  border-radius: 0px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.leaflet-popup-content {
+  margin: 5px;
+}
+
+.leaflet-popup-tip {
+  background: black;
+}
+
+.leaflet-popup-close-button {
+  display: none;
 }
 
 .c-icon--london {
   border-bottom: 5px tomato solid;
+}
+
+.c-icon--paris {
+  border-bottom: 10px dotted deepskyblue;
 }
 </style>
