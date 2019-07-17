@@ -6,8 +6,6 @@
       @update:center="centerUpdated"
       @update:bounds="boundsUpdated"
     >
-      <!-- TODO zoomout overlay not resizing -->
-      <!-- TODO Search for l-map and l-tile-layer not sync -->
       <l-tile-layer v-bind="l_tile_layer_props"></l-tile-layer>
       <l-marker
         v-for="a_marker in l_marker_props"
@@ -20,7 +18,12 @@
         <l-popup>{{ a_marker.options.title }}</l-popup>
       </l-marker>
 
-      <l-choropleth-layer v-bind="l_choropleth_layer_props">
+      <l-choropleth-layer
+        v-bind="l_choropleth_layer_props"
+        @l-add="enteredAnArea"
+        @l-click="enteredAnArea"
+        @click="enteredAnArea"
+      >
         <template slot-scope="props">
           <l-info-control
             :item="props.currentItem"
@@ -185,8 +188,8 @@ export default {
       l_reference_chart_props: {
         // Good acessibility map colours http://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=5
         colorScale: ["d7191c", "fdae61", "ffffbf", "a6d96a", "1a9641"],
-        min: "10",
-        max: "200",
+        // min: "10",
+        // max: "80",
         position: "topright"
       }
     };
@@ -201,6 +204,9 @@ export default {
     },
     boundsUpdated(bounds) {
       this.l_map_props.bounds = bounds;
+    },
+    enteredAnArea() {
+      console.log("pikachu", event);
     }
   }
 };
