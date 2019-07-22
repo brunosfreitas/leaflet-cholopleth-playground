@@ -1,4 +1,6 @@
-# leaflet-cholopleth-playground
+# leaflet-cholopleth-playground 
+
+> Playground
 
 > A Vue.js project
 
